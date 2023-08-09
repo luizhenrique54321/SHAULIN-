@@ -1,31 +1,112 @@
 <!DOCTYPE html>
 <html>
-   
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>LUIZ2023</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-   
-<body>
-    <header class="cabeçalho">
-        <div class="container">
-            <span class=”cabeçalho__menu-hamburguer” class="container-imagem"></span>
-            <img src="img/Logo.svg" alt="Logo">
-        </div>
-        <div class="container">
-            <a href="#"><img src="img/Favoritos.svg" alt="Favoritos" class="container-imagem"></a>
-            <a href="#"><img src="img/Usuário.svg" alt="usuario" class="container-imagem"></a>
-            <a href="#"><img src="img/Compras.svg" alt="compras" class="container-imagem"></a>
-        </div>    
+    <head>
+            <meta charset="UTF8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Shaulin</title>
+                     <link rel="preconnect" href="https://fonts.googleapis.com">
+                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"  />
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="reset.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+               <input type="checkbox" id="menu" class="container--tecla">
+                    <label for="menu">
+                        <span class="cabecalho_menu_hamburguer container--imagem"></span>
+                    </label>
+          <ul class="lista-menu">
+         <li class="lista-menu-titulo">Shaulin</li>
+         <li class="lista-menu-item">
+         <a href="#" class="lista_menu-link">Comunidade</a>
+          </li>
+
+           <li class="lista-menu-item">
+        <a href="#" class="lista_menu-link">VENDAS</a>
+         </li>
+
+        <li class="lista-menu-item">
+        <a href="#" class="lista_menu-link">NOVIDADES</a>
+        </li>
+
+        <li class="lista-menu-item">
+        <a href="#" class="lista_menu-link">LOJA</a>
+        </li>
+
+                          
+     </ul>
+    <img src="img/Logo.svg" alt="SHAULINimg" class="shaulinimg" >
+    </div>
+
+    <div class="container">
+    <a href="#"><img class="container--imagem" src="img/Usuário.svg" alt="Usuário"></a>
+    <a href="#"><img class="container--imagem" src="img/Favoritos.svg" alt="Usuário"></a>
+    <a href="#"><img class="container--imagem" src="img/Compras.svg" alt="Usuário"></a>
 
 
+
+
+    </div>
     </header>
-   
-    
+    <section class="banner">
+    <h2 class="banner-titulo">SITE DO LUIZ</h2>
+    <p class="banner-texto">DESCUBRA DIVERSAS COISAS</p>
+    <input type="search" class="banner-pesquisa" placeholder="pesquisar">
+    </section>
 
-</body>
 
-    </html>  
+    <section class="carrossel">
+    <h2 class="carrossel_titulo">Vendas de Veiculos</h2>
+    </section>
+
+
+
+
+    <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+
+     <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+   <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/urus.jpg" alt="urus"></div>
+    <div class="swiper-slide"><img src="img/huracan.jpg" alt="huracan"></div>
+    <div class="swiper-slide"><img src="img/720s.jpg" alt="720"></div>
+    <div class="swiper-slide"><img src="img/ferrari.jpg" alt="ferrari"></div>
+
+
+
+
+
+
+    ...
+    </div>
+
+                                    
+     <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+                                
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    }, 
+    });     
+
+    </script>
+
+    </body>
+
+</html>

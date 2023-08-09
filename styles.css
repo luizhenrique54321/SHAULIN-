@@ -1,0 +1,27 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/carrosel.css);
+
+:root {
+    --cor-de-fundo: #c0bfbf;
+    --branco: #ffffff;
+    --cinza: #5f5f5f;
+    --azul: #1335a3; 
+    --fonte-principal: "Poppins";
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.shaulinimg {
+    width: 55px
+}
+.swiper-slide {
+    width: 10%;
+}
